@@ -1,0 +1,58 @@
+﻿@model ApplicationGroupWork.Models.MemberCategory
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MemberCategory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MemberName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MemberName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalLoans)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalLoans)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FineAmountPerDay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FineAmountPerDay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReturningDays)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReturningDays)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MemberCategoryID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
